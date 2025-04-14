@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgPedidoConcluido"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/checkgreen"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Pedido concluído" />
+
+    <TextView
+        android:id="@+id/txtResumoPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resumo do pedido aparecerá aqui"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnNovoPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fazer Novo Pedido" />
+</LinearLayout>

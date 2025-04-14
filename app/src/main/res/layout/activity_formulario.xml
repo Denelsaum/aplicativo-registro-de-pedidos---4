@@ -1,0 +1,68 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <!-- Imagem ilustrativa de lanche -->
+        <ImageView
+            android:id="@+id/imgLanche"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/menu"
+            android:contentDescription="Imagem de lanche" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite seu nome">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtNomeCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolha seu lanche:"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/grupoLanches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton android:id="@+id/rbXburger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X-Burguer" />
+
+            <RadioButton android:id="@+id/rbXsalada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X-Salada" />
+
+            <RadioButton android:id="@+id/rbMisto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Misto Quente" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar Pedido"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>
